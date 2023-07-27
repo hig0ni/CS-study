@@ -1,9 +1,7 @@
-
-
 ### process와 program의 차이?
-프로그램: 컴퓨터에 설치할 수 있으며 어떠한 작업을 위해 실행할 수 있는 파일 
-프로세스: CPU를 차지하며 프로그램을 실행하는 주체
-한줄요약: 실행 중인 프로그램 = 프로세스
+프로그램: 컴퓨터에 설치할 수 있으며 어떠한 작업을 위해 실행할 수 있는 파일   
+프로세스: CPU를 차지하며 프로그램을 실행하는 주체  
+-> 한줄요약: 실행 중인 프로그램 = 프로세스
 
 ### buffer란?
 데이터를 한 곳에서 다른 한 곳으로 전송하는 동안, 일시적으로 그 데이터를 보관하는 메모리 공간이다.
@@ -18,8 +16,8 @@ interface를 보통 file의 형태로 구현하는데, 특히 tcp/ip를 추상�
 프로세스
 
 ### L2, L3, L4에서의 식별자는?
-L2 - Data Link - MAC 주소
-L3 - Network - IP 주소 
+L2 - Data Link - MAC 주소  
+L3 - Network - IP 주소  
 L4 - Transport - port 주소
 
 ### 커널 모드와 유저모드의 차이는?
@@ -30,12 +28,12 @@ L4 - Transport - port 주소
 computer + network 
 
 ### switch는 뭐고 end-point는 뭘까요?
-switch : 네트워크 그 자체를 이루는 host (인프라)
+switch : 네트워크 그 자체를 이루는 host (인프라)  
 end-point : 네트워크를 이용하는 주체 (단말기)
 
 ### end-point를 역할에 따라 분류하면 어떻게 나눌 수 있을까요?
-clientnt: 서비스 소비자
-server: 서비스 제공자
+client: 서비스 소비자  
+server: 서비스 제공자  
 peer: 서비스 소비자이면서 제공자!
 
 ### DoD가 무엇일까요?
