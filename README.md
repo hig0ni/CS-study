@@ -1,5 +1,5 @@
 # 📚 CS 뿌시기
-### 운영체제 CS 스터디 (2023. 05. 04 ~ 2023. 06.08)
+### 운영체제 CS 스터디 (2023. 05. 04 ~ 2023. 06. 08)
 <table>
   <tbody>
     <tr>
@@ -21,7 +21,7 @@
   </tbody>
 </table>
 
-### 네트워크 CS 스터디 (2023. 06. 27 ~)
+### 네트워크 CS 스터디 (2023. 06. 27 ~ 2023. 08. 22)
 
 <table>
   <tbody>
@@ -40,19 +40,44 @@
   </tbody>
 </table>
 
+### 디자인 패턴 스터디 (2023.08.29 ~ )
+
+<table>
+  <tbody>
+    <tr>
+      <tr>
+      <td align="center"><a href="https://github.com/dongkiid"><img src="https://github.com/hig0ni.png" width="100px;" alt=""/></td>
+      <td align="center"><a href="https://github.com/dongkiid"><img src="https://github.com/hb9397.png" width="100px;" alt=""/></td>
+      <td align="center"><a href="https://github.com/kkkwp"><img src="https://github.com/kkkwp.png" width="100px;" alt=""/></td>
+      <td align="center"><a href="https://github.com/jooh9992"><img src="https://github.com/jooh9992.png" width="100px;" alt=""/></td>
+      <td align="center"><a href="https://github.com/dongkiid"><img src="https://github.com/dongkiid.png" width="100px;" alt=""/></td>
+      </tr>
+      <tr>
+      <td align="center"><a href="https://github.com/hig0ni">건희</td>
+      <td align="center"><a href="https://github.com/hb9397">현범</td>
+      <td align="center"><a href="https://github.com/kkkwp">채윤</td> 
+      <td align="center"><a href="https://github.com/jooh9992">주형</td> 
+      <td align="center"><a href="https://github.com/dongkiid">민서</td> 
+      </tr>
+    </tr>
+  </tbody>
+</table>
+
 ## ⏰ 스터디 일정 및 규칙
-- 시간: 매주 목요일 10:00 ~ 13:00
-- 장소: 오프라인, 신논현역
-- PR: 오프라인 발표 이후 자신이 발표한 자료를 업로드
+- 시간: 매주 화요일 21:00 ~ 22:00
+- 장소: 온라인
+- PR: 발표 이후 자신이 발표한 자료를 업로드
 - 벌금: 지각 10분당 ₩500
 
 ## 🏋️‍♀️ 스터디 목표
 - 컴퓨터 운영체제에 대한 지식을 습득하여 더 나은 개발자로 성장해 나간다.
 
 ## 👨🏻‍💻 스터디 진행 방법
-- 일주일에 5개 챕터를 공부하고 주제 하나씩 맡아서 약 10분 정도 발표를 진행
+- 일주일에 3개 챕터를 공부하고 주제 하나씩 맡아서 약 10분 정도 발표를 진행
+- 스터디에 해당하는 분량은 미리 예습해오기
 - 주제는 사다리타기를 통해 공평하게 분배
 
 ### 🔗 참고 자료
 - [KOCW 운영체제 강의](http://www.kocw.net/home/cview.do?cid=3646706b4347ef09#.ZC-7lgE1nt4.link) (반효경, 이화여자대학교)
 - [인프런 네트워크 강의](https://www.inflearn.com/course/lecture?courseSlug=%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%95%B5%EC%8B%AC%EC%9D%B4%EB%A1%A0-%EA%B8%B0%EC%B4%88) (최호성, 외워서 끝내는 네트워크 핵심이론 - 기초)
+- [refactoring.guru](https://refactoring.guru/ko/design-patterns/catalog)(refactoring.guru 디자인 패턴)
