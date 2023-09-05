@@ -27,11 +27,11 @@
 - 프로그램 내에서 여러 부분에서 해당 객체를 공유하며 사용할 때
 
 <aside>
-💡 또한 싱글톤 패턴은 주로 공통된 객체를 여러 개 생성해서 사용하는 **DBCP(DataBase Connection Pool)**와 같은 상황에서 많이 사용된다.
+💡 또한 싱글톤 패턴은 주로 공통된 객체를 여러 개 생성해서 사용하는 DBCP(DataBase Connection Pool)와 같은 상황에서 많이 사용된다.
 
 DBCP(DataBase Connection Pool)란?
 사용자로부터 **요청이 들어올 때마다 데이터베이스 연결을 수립하고, 해제하는 비효율성을 해결**하기 위해 **미리 여러 개의 데이터베이스 커넥션을 생성**해 놓고,  **필요할 때마다 꺼내 쓰도록** 하는 것 
-DBCP에는 ****사전에 데이터베이스와 이미 연결이 수립된 **다수의 커넥션들이 존재하고 항상 연결을 열린 상태로 유지**한다. 
+DBCP에는 사전에 데이터베이스와 이미 연결이 수립된 **다수의 커넥션들이 존재하고 항상 연결을 열린 상태로 유지**한다. 
 
 **결과적으로 데이터베이스 연결을 열고, 닫는 비용을 절약한다.**
 
@@ -44,7 +44,7 @@ DBCP에는 ****사전에 데이터베이스와 이미 연결이 수립된 **다�
 - 한개의 인스턴스만을 고정 메모리 영역에 생성하고 사용하므로, 추후 해당 객체에 접근 할 때 **메모리 낭비를 방지**(원래는 객체를 생성할 때마다 메모리 영역을 할당받아야 한다.)
 - 이미 생성된 인스턴스 활용하므로 **속도 측면에서 이점**
 - 싱글톤 인스턴스 전역으로 사용하는 인스턴스이기 때문에 다른 여러 클래스에서 데이터를 공유하며 사용할 수 있어 **데이터 접근이 쉽다.**
-- ****도메인 관점에서 **인스턴스가 한 개만 존재하는 것을 보증**할 수 있다.
+- 도메인 관점에서 **인스턴스가 한 개만 존재하는 것을 보증**할 수 있다.
 
 ---
 
@@ -112,7 +112,7 @@ instance : 10
 # 5. 동시성 문제 해결 방법
 
 <aside>
-💡 **Eager initailization(이른 초기화, Thread safe)**
+💡 Eager initailization(이른 초기화, Thread safe)
 이 방법은 클래스의 static 특징을 이용해 **클래스 로더가 초기화하는 시점에 인스턴스를 메모리에 등록하는 방법이다**.
 아래처럼 static **변수 선언과 동시에 초기화**를 해주면 동시성 문제를 해결할 수 있다.
 
@@ -169,7 +169,7 @@ instance : 0
 ```
 
 <aside>
-💡 **Lazy Initialization with synchronized(게으른 초기화, 동기화 블럭)**
+💡 Lazy Initialization with synchronized(게으른 초기화, 동기화 블럭)
 
 이 방법은 **synchronized** 키워드를 이용한 방식이다.
 synchronized는 기본적으로 동기화를 보장해주는 키워드로 **일반 메소드에 synchronized를 선언하면 그 메소드의 인스턴스는 하나의 쓰레드만 접근**할 수 있다. 즉, synchronized가 선언된 메소드의 인스턴스가 2개가 있다면 **각 인스턴스마다 하나의 쓰레드가 접근**할 수 있다.
@@ -238,7 +238,7 @@ instance : 2
 ```
 
 <aside>
-💡 **Lazy Initialization. Double Checking Locking(DCL)**
+💡 Lazy Initialization. Double Checking Locking(DCL)
 
 Double Checking Locking은 위에서 본 synchronized 키워드를 사용한 방법의 단점을 보완한 방법이다.
 synchronized와는 달리, **먼저** 조건문으로 **인스턴스의 존재 여부를 확인**한 다음 **두번째 조건문**에서 **synchronized를 통해 동기화**를 시켜 인스턴스를 생성하는 방법
@@ -308,7 +308,7 @@ instance : 2
 ```
 
 <aside>
-💡 **Lazy Initialization. LazyHolder
+💡 Lazy Initialization. LazyHolder
 >> 가장 성능이 좋고 많이 쓰이는 방식**
 
 이 방법은 클래스안에 클래스를 두는 holder방법을 이용한 것이다. 
