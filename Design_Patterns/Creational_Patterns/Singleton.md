@@ -484,7 +484,6 @@ public class Main
 </aside>
 <img width="1024" alt="image" src="https://github.com/hig0ni/CS-study/assets/111436454/e9ae0096-58e3-4f3a-879b-3e5a0ef808ed">
 <aside>
-	출처: 코딩팩토리 티스토리 블로그 [[Java] 자바 static의 의미와 사용법 (tistory.com)](https://coding-factory.tistory.com/524)
 💡 Static 키워드를 통해 생성된 정적멤버들은 Heap영역이 아닌 Static영역에 할당된다. 
 
 Static 영역에 할당된 메모리는 **모든 객체가 공유하여 하나의 멤버를 어디서든지 참조할 수 있는 장점**을 가지지만 Garbage Collector의 관리 영역 밖에 존재하여 **프로그램 종료시까지 메모리가 할당된 채로 존재하므로, Static을 남발하게 되면 시스템 성능에 악영향을 줄 수 있다.**
