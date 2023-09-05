@@ -111,6 +111,7 @@ instance : 10
 
 <aside>
 💡 Eager initailization(이른 초기화, Thread safe)
+	
 이 방법은 클래스의 static 특징을 이용해 클래스 로더가 초기화하는 시점에 인스턴스를 메모리에 등록하는 방법이다.
 아래처럼 static 변수 선언과 동시에 초기화를 해주면 동시성 문제를 해결할 수 있다.
 
