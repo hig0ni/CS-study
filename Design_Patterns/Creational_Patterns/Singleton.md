@@ -482,7 +482,7 @@ public class Main
 정적 멤버는 클래스 로더가 클래스를 로딩해서 메소드 메모리 영역에 적재할 때 클래스별로 관리한다. 따라서 **클래스의 로딩이 끝나는 즉시 바로 사용할 수 있다.**
 
 </aside>
-<img width="1024" alt="image" src="https://github.com/hig0ni/CS-study/assets/111436454/1398000e-fcea-4738-87b7-c97b01da31b7">
+<img width="1024" alt="image" src="https://github.com/hig0ni/CS-study/assets/111436454/e9ae0096-58e3-4f3a-879b-3e5a0ef808ed">
 
           출처: 코딩팩토리 티스토리 블로그 [[Java] 자바 static의 의미와 사용법 (tistory.com)](https://coding-factory.tistory.com/524)
 
