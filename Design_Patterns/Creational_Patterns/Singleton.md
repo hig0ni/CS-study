@@ -111,8 +111,8 @@ instance : 10
 
 <aside>
 💡 Eager initailization(이른 초기화, Thread safe)
-이 방법은 클래스의 static 특징을 이용해 **클래스 로더가 초기화하는 시점에 인스턴스를 메모리에 등록하는 방법이다**.
-아래처럼 static **변수 선언과 동시에 초기화**를 해주면 동시성 문제를 해결할 수 있다.
+이 방법은 클래스의 static 특징을 이용해 클래스 로더가 초기화하는 시점에 인스턴스를 메모리에 등록하는 방법이다.
+아래처럼 static 변수 선언과 동시에 초기화를 해주면 동시성 문제를 해결할 수 있다.
 
 </aside>
 
@@ -239,9 +239,9 @@ instance : 2
 💡 Lazy Initialization. Double Checking Locking(DCL)
 
 Double Checking Locking은 위에서 본 synchronized 키워드를 사용한 방법의 단점을 보완한 방법이다.
-synchronized와는 달리, **먼저** 조건문으로 **인스턴스의 존재 여부를 확인**한 다음 **두번째 조건문**에서 **synchronized를 통해 동기화**를 시켜 인스턴스를 생성하는 방법
+synchronized와는 달리, 먼저 조건문으로 **인스턴스의 존재 여부를 확인**한 다음 **두번째 조건문**에서 **synchronized를 통해 동기화**를 시켜 인스턴스를 생성하는 방법
 
-스레드를 안전하게 만들면서, 처음 생성 이후에는 synchronized를 실행하지 않기 때문에 성능저하 완화가 가능함
+처음 생성 이후에는 synchronized를 실행하지 않기 때문에 성능저하 완화가 가능함
 
 </aside>
 
@@ -307,7 +307,7 @@ instance : 2
 
 <aside>
 💡 Lazy Initialization. LazyHolder
->> 가장 성능이 좋고 많이 쓰이는 방식**
+>> 가장 성능이 좋고 많이 쓰이는 방식
 
 이 방법은 클래스안에 클래스를 두는 holder방법을 이용한 것이다. 
 아래 코드에서 중첩 클래스의 instance는 getInstance()가 호출되기 전까지는 초기화 되지않는다. 또한 instance는 static이므로 클래스 로딩 시점에 한번만 호출되고 final을 사용해 다시 값이 할당되지 않도록 함으로써 동시성 문제를 해결할 수 있다.
