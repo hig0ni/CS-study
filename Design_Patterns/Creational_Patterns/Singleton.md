@@ -463,8 +463,8 @@ public class Main
 
 <aside>
 💡 자동차를 운전하는 클래스(CarClass)가 있다고 가정해보자
-**생성자를 private로 만들어서 외부에서는 직접 인스턴스를 생성할 수 없게 하고**
-**static 메소드**를 만들어서 이 메서드를 통해서만 객체를 생성하거나 얻을 수 있다.
+생성자를 private로 만들어서 외부에서는 직접 인스턴스를 생성할 수 없게 하고
+static 메소드를 만들어서 이 메서드를 통해서만 객체를 생성하거나 얻을 수 있다.
 
 또한, static 메서드를 사용하므로 인스턴스를 생성하지 않고 바로 사용 가능하며 하나의 객체를 **공유하며 사용한다.**
 
@@ -475,7 +475,7 @@ public class Main
 ### Static 키워드에 대해서
 
 <aside>
-💡 Static 키워드를 사용하여 Static변수와 Static메소드를 만들 수 있는데 이 둘을 합쳐 **정적 멤버(또는 클래스 멤버)** 라고 한다.
+💡 Static 키워드를 사용하여 Static변수와 Static메소드를 만들 수 있는데 이 둘을 합쳐 정적 멤버(또는 클래스 멤버) 라고 한다.
 
 정적 멤버는 객체(인스턴스)에 소속된 멤버가 아니라 클래스에 고정된 멤버이다. 
 
@@ -512,17 +512,11 @@ public class Static_ex {
 }
 ```
 
-<aside>
-💡 Number 클래스안에 클래스 변수 class_num과 인스턴스 변수 instance_num가 있다.
+Number 클래스안에 클래스 변수 class_num과 인스턴스 변수 instance_num가 있다.
 두개의 Number 인스턴스 number1과 number2를 생성하였다.
 먼저 number1에서 class_num과  instance_num을 각각 1씩 증가시킨 후, number2에서 class_num과  instance_num을 출력했을때 결과값은 class_num은 1, instance_num은 0이 출력된다.
-	
-</aside>
 
-<aside>
 이런 현상이 나타나는 이유는, 인스턴스 변수는 인스턴스가 생성될 때마다 생성되므로 인스턴스마다 각기 다른 값을 가지지만 정적 변수는 모든 인스턴스가 하나의 저장공간을 공유하기에 항상 같은 값을 가지기에 나타난다.
-	
-</aside>
 
 ### 정적(Static) 메서드 사용 예시
 
