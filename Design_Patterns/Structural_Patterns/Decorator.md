@@ -31,7 +31,7 @@ public class CheesePizza extends Pizza {
 }
 ```
 
-```scala
+```java
 public class BulgogiPizza extends Pizza {
     @Override
     protected String pizzaName() {
@@ -145,7 +145,7 @@ public class Client {
 
 ⇒ (치즈(불고기(피자)))
 
-### 데코레이터 패턴 구조
+## 데코레이터 패턴 구조
 
 ![Decorator](https://github.com/kkkwp/CS-study/assets/113974911/7816e653-7f2b-40a9-bce1-b46006be0f57)
 
@@ -195,8 +195,12 @@ public class Client {
     - `RequestMappingHandlerAdapter` 는 `@RequestMapping` 주석이 달린 컨트롤러를 사용할 수 있게 해준다.
 - 각 `HandlerAdapter` 들은 기존의 동작을 해치지 않고, 새로운 종류의 컨트롤러가 동작할 수 있도록 도와준다.
 
-#### HandlerAdapter는 어댑터 패턴 아니야?
+### HandlerAdapter는 어댑터 패턴 아니야?
 
 - `HandlerAdapter` 는 코드를 보는 시선에 따라 어댑터 패턴과 데코레이터 패턴 둘 다 될 수 있다.
 - `HandlerAdapter` 의 의도를 `서로 다른 코드와의 호환` 이라고 본다면, 어댑터 패턴이 된다.
 - `HandlerAdapter` 에 어댑터를 추가하여 `기존 객체에 영향을 미치지 않고 새로운 기능을 추가하는 것` 이라고 본다면, 데코레이터 패턴이 된다.
+
+---
+#### reference
+https://jake-seo-dev.tistory.com/406
