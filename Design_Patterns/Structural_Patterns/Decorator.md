@@ -1,10 +1,10 @@
 # Decorator Pattern
 
-- 래퍼 객체를 이용해 모듈과 비슷한 방식으로 기존 객체에 기능을 추가하고 조합하여 사용할 수 있는 디자인 패턴
-    - 기존 기능 및 다른 객체에 영향을 주지 않고 개별 객체에 새로운 책임을 추가하는 용도로 사용 가능
+  래퍼 객체를 이용해 모듈과 비슷한 방식으로 기존 객체에 기능을 추가하고 조합하여 사용할 수 있는 디자인 패턴
+  - 기존 기능 및 다른 객체에 영향을 주지 않고 개별 객체에 새로운 책임을 추가하는 용도로 사용 가능하다.
 - 런타임에 객체에 '행위' 혹은 '기능'을 추가할 수 있게 해준다.
 - `기존 객체`를 `'행위'를 가진 특별한 래퍼 객체 (데코레이터)`에 넣어서 객체가 그 '행위'를 할 수 있게 만든다.
-- 캐싱, 로깅, 검증과 같은 기능에 쓰일 수 있다
+- 캐싱, 로깅, 검증과 같은 기능에 쓰일 수 있다.
 
 ---
 
@@ -12,7 +12,7 @@
 
 ### 일반 피자
 
-```arduino
+```java
 public class Pizza {
     protected String pizzaName() {
         return "피자";
@@ -22,7 +22,7 @@ public class Pizza {
 치즈 피자와 불고기 피자를 만들어야 하는 요구사항이 들어왔다!
 → 상속을 이용해 클래스로 간단 구현 가능
 
-```scala
+```java
 public class CheesePizza extends Pizza {
     @Override
     protected String pizzaName() {
@@ -147,23 +147,26 @@ public class Client {
 
 ### 데코레이터 패턴 구조
 
-![Untitled](Decorator%20Pattern%2086e7ee3a8bb64818aca7b330a28a1b26/Untitled.png)
+![Decorator](https://github.com/kkkwp/CS-study/assets/113974911/7816e653-7f2b-40a9-bce1-b46006be0f57)
 
-피자 서비스: 피자에 대한 추상적인 설계 정의
 
-디폴트 피자: 피자 서비스를 구현한 구체 클래스 
+피자 예제를 기반으로 표현해보자면,
 
-피자 데코레이터: 디폴트 피자를 꾸며주는 추상 클래스 
+    PizzaService(=Component): 피자에 대한 추상적인 설계 정의
 
-치즈 데코레이터, 불고기 데코레이터: 피자서비스를 구현한 디폴트피자 클래스에 토핑을 추가(=포장, 변경, 확장 등)해주는 래퍼 클래스 
+    Default Pizza(=Concret Component): 피자를 구체적으로 구현하는 구체 클래스 
+
+    PizzaDecorator(=Decorator): 피자에 토핑을 올릴 수 있게하는 추상 클래스 
+
+    CheeseDecorator, BulgogiDecorator(=Concrete Decoator 1,2): PizzaDecorator를 상속하여 실제로 토핑을 추가하는 데코레이터 클래스
 
 ---
 
-## 장점
+## Decorator Pattern의 장점
 
 - 상속의 치명적 단점(강한 결합이 강제 되는 것, 복잡한 구조)들을 데코레이터의 합성(=조합)을 통해 피할 수 있음 → 유연한 설계 가능
 
-## 단점
+## Decorator Pattern의 단점
 
 데코레이터를 조합하는 코드가 조금 복잡할 수 있다.
 
@@ -184,6 +187,7 @@ public class Client {
 
 ## 스프링에서 사용되는 데코레이터 패턴
 
+### HandlerAdapter
 - 스프링에서의 `HandlerAdapter` 를 데코레이터 패턴의 예로 볼 수 있다.
 - 데코레이터 패턴의 특징은 래퍼 객체를 이용해 기존 객체에 영향을 미치지 않고 새로운 기능을 추가하는 것이라 볼 수 있다.
 - `HandlerAdapter` 는 스프링에서 특정한 타입의 컨트롤러를 디스패처 서블릿에 사용할 수 있게 해준다.
@@ -191,7 +195,7 @@ public class Client {
     - `RequestMappingHandlerAdapter` 는 `@RequestMapping` 주석이 달린 컨트롤러를 사용할 수 있게 해준다.
 - 각 `HandlerAdapter` 들은 기존의 동작을 해치지 않고, 새로운 종류의 컨트롤러가 동작할 수 있도록 도와준다.
 
-## 데코레이터 패턴 vs 어댑터 패턴
+#### HandlerAdapter는 어댑터 패턴 아니야?
 
 - `HandlerAdapter` 는 코드를 보는 시선에 따라 어댑터 패턴과 데코레이터 패턴 둘 다 될 수 있다.
 - `HandlerAdapter` 의 의도를 `서로 다른 코드와의 호환` 이라고 본다면, 어댑터 패턴이 된다.
