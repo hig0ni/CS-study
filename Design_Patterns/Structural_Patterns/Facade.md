@@ -204,7 +204,7 @@ class Client {
 
 - 퍼사드 패턴 구조
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7cff728d-f74c-4183-8a8a-3a9e56603488/334f95f2-53e1-4506-8823-7c9322b6fa00/Untitled.png)
+![4](https://github.com/hig0ni/CS-study/assets/111436454/33ad1ae1-8cf5-477b-9ac9-b7c45f5e2f7b)
 
 ### 퍼사드 패턴을 적용한 경우
 
