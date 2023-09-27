@@ -37,4 +37,4 @@
 
 ### 🔗 참고 자료
 - [refactoring.guru](https://refactoring.guru/ko/design-patterns/catalog)(refactoring.guru 디자인 패턴)
-- https://inpa.tistory.com(Inpa Dev)
+- [Inpa Dev](https://inpa.tistory.com)(Inpa Dev)
