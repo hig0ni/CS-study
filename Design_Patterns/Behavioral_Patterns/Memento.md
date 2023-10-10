@@ -38,17 +38,17 @@
     
 <img width="460" alt="image" src="https://github.com/kkkwp/CS-study/assets/97209766/5205a18d-f763-491e-ab98-d2b36801c9e6">
     
-- `**originator**`
+- **`originator`**
     - **사용자가 저장할 객체로 `state` 를 `createMemento()` 로 현재 객체의 상태 정보를 저장하고 그 상태를 반환한다.**
     - **또한 Memento 객체로 전달된 상태를 복구하기 위해서 `restore(Memmento)` 를 구현한다.**
     - **즉, 자신의 상태에 대한 스냅샷을 생성할 수 있고 복원할 수 있게 된다.**
 
-- `**memento**`
-    - `**originator` 의 `내부 정보` 를 추상화한 클래스로 `care taker(Client Code)`은  `originator` 객체의 디테일한 정보를 직접적으로 가지는 것이 아니라 `memento`타입으로 가진다.**
+- **`memento`**
+    - **`originator` 의 `내부 정보` 를 추상화한 클래스로 `care taker(Client Code)`은  `originator` 객체의 디테일한 정보를 직접적으로 가지는 것이 아니라 `memento`타입으로 가진다.**
     
-- `**care taker(Client Code)**`
+- **`care taker(Client Code)`**
     - **기존의 디자인 패턴의 구조에서 Client 코드와 같은 역할이지만 주로, `memento`의 상태 관리를 하기 때문에 별칭하는 것 같다.**
-    - `**originator` 객체의 현재 내부 상태를 저장하는 Memento 객체를 생성하고 돌려주는 역할을 주로 하며, `originator` 의 정보를 `memento` 타입으로 접근한다.**
+    - **`originator` 객체의 현재 내부 상태를 저장하는 Memento 객체를 생성하고 돌려주는 역할을 주로 하며, `originator` 의 정보를 `memento` 타입으로 접근한다.**
 
 ## **Memento Pattern 코드 예제**
 
@@ -68,7 +68,7 @@
         ```
         
     
-    - `**care taker(Client Code)` 역할의 Client 클래스**
+    - **`care taker(Client Code)` 역할의 Client 클래스**
         
         ```java
         public class Client {
@@ -86,7 +86,7 @@
         ```
         
 - **Memento Pattern 적용 이후**
-    - `**memento` 역할의 GameSave 클래스**
+    - **`memento` 역할의 GameSave 클래스**
         - **Memento는 GameSave가 가지고 있는 필드를 모두 가지고 있고, 불변 객체이다.**
         - **즉 score 정보들은 한번 생성자를 통해 한번 생성되면 절대 변하지 않는다.**
         
@@ -127,7 +127,7 @@
         ```
         
     
-    - `**memento` 역할의 GameSave 클래스**
+    - **`memento` 역할의 GameSave 클래스**
         
         ```java
         public class Client {
