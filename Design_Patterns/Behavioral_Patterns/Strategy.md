@@ -275,18 +275,18 @@ package javax.servlet.http;
 import javax.servlet.Servlet;
 import java.io.IOException;
 
-public class HttpServlet implements Servlet {     <===== ❶
+public class HttpServlet implements Servlet {     
     @Override
     public void init() {
 
     }
 
     @Override
-    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {     <===== ❷
+    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {    
         if ("GET".equals(request.getMethod())) {
-            doGet(request, response);      <===== ❸
+            doGet(request, response);      
         } else {
-            doPost(request, response);     <===== ❹
+            doPost(request, response);     
         }
     }
 ```
